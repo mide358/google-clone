@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  margin-top: 1.8%;
+  margin-left: auto;
+}
+nav a {
+  color: black;
+  font-size: 1.2vw;
+  padding-right: 17px;
+}
+.link2 {
+  margin-right: 20%;
+}
+
+nav img {
+  height: 1.2vw;
+}
+nav img:hover {
+  border-radius: 50%;
+  background-color: lightslategray;
+  border: transparent;
+  border-width: 10px;
+}
+
+#account {
+  border-radius: 25px;
+  background-color: #b10f2e;
+  color: white;
+  padding: 1vw 1.5vw;
+  text-decoration: none;
+  font-size: 1.2vw;
+}
+#account:hover {
+  border: 2px solid lightgrey;
+}
+
+main {
+  width: 60%;
+  margin: 1rem auto 6rem auto;
+  text-align: center;
+}
+
+input {
+  max-width: 100%;
+  width: 80%;
+  padding: 1em;
+  border-radius: 25px;
+  border: 1px solid #ebede9;
+  margin-top: 4%;
+}
+input:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input:focus {
+  outline: none;
+}
+.input-icons {
+  display: flex;
+  position: relative;
+  margin-top: -30px;
+  margin-left: 12%;
+}
+
+#mic {
+  margin-left: 80%;
+}
+#mic img {
+  height: 1.6vw;
+}
+.btn-container {
+  margin: 1.8rem 1.8rem 1.5rem 1.8rem;
+  display: flex;
+  justify-content: center;
+  transition: box-shadow 0.3s;
+}
+.btn-container button {
+  text-decoration: none;
+  margin: 0.5vw;
+  padding: 0.8vw 1vw;
+  border: none;
+  font-size: 1.3vw;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+.btn-container button:focus {
+  outline: none;
+}
+.btn-container button:hover {
+  background-color: #dee1e3;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+}
+.language p {
+  font-size: 1.3vw;
+  margin-right: 1rem;
+}
+
+.language a {
+  font-size: 1.3vw;
+  padding-left: 1rem;
+  color: #110cac;
+}
+footer {
+  background-color: #f2f2f2;
+  color: #858585;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.4vw;
+}
+
+.first-footer p {
+  text-align: left;
+  padding: 0.8rem 1rem 1rem 2rem;
+}
+
+.carbon {
+  text-align: center;
+  border-top: 0.5px solid #ebede9;
+  padding: 1em;
+}
+.carbon img {
+  width: 1.3vw;
+}
+.second-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 0 10em;
+}
+
+.left a {
+  margin-right: 2rem;
+  color: #858585;
+}
+
+.right a {
+  margin-right: 2rem;
+  color: #858585;
+}
+
+/* ************media query for screen  between 321 and 768 px******************************* */
+@media screen and (max-width: 768px) {
+  #account {
+    font-size: 1.6vw;
+  }
+
+  .google-logo img {
+    height: 25px;
+  }
+  #input {
+    max-width: 400px;
+    margin-left: auto;
+  }
+
+  .second-footer {
+    margin-left: 5em;
+  }
+  left a {
+    margin-right: 1rem;
+  }
+}
+/* *****************media query for screen 320px and lower */
+@media screen and (max-width: 425px) {
+  nav a {
+    padding-right: 1px;
+  }
+  nav img {
+    height: 2vw;
+  }
+  main {
+    margin-top: 20%;
+  }
+
+  input {
+    padding: 0.5vh 1vw;
+    width: 100%;
+  }
+  .input-icons {
+    margin-top: -20px;
+  }
+  #search img {
+    height: 1vh;
+    margin-left: -15px;
+  }
+  #mic img {
+    height: 1.5vh;
+    margin-left: 12px;
+  }
+  .btn-container {
+    margin: 10px;
+  }
+  .btn-container button {
+    padding: 0.9vw 1.1vw;
+    font-size: 1.6vw;
+  }
+  .language {
+    font-size: 1.3vw;
+  }
+  .language p {
+    margin-right: 2px;
+  }
+
+  .language a {
+    padding-left: 0.4rem;
+  }
+  .first-footer p {
+    padding: 0.3rem 1rem 0.3rem 2rem;
+  }
+  .second-footer {
+    margin-left: 1rem;
+  }
+  .left a {
+    margin-right: 0;
+    margin-left: 0.5rem;
+    /* justify-content: space-around; */
+    padding-right: 0.3rem;
+  }
+  .right a {
+    margin-right: 0;
+    padding-left: 1rem;
+  }
+}
